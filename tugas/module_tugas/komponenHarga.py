@@ -1,4 +1,4 @@
-class komponenHarga:
+class komponen_harga:
     def __init__(self, subtotal):
         self.subtotal = subtotal
         self.total_akhir = subtotal
