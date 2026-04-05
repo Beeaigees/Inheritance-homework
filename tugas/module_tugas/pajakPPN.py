@@ -5,5 +5,3 @@ class pajak_ppn(komponen_harga):
         super().__init__(subtotal)
         self.nilaipajak = self.subtotal * 0.1
         self.total_akhir += self.nilaipajak
-
-    def tambah_item(self,)
