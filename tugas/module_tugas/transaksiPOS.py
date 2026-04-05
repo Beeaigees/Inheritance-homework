@@ -34,3 +34,8 @@ class transaksi_pos(pajak_ppn):
         print(f"{'PPN (10%)':<25} : Rp {self.nilaipajak:>8,.0f}")
         print(f"{'Total Akhir':<25} : Rp {self.total_akhir:>8,.0f}")
         print("=" * 40)
+
+    def proses_pembayaran(self):
+        #Bagian kina disini, method ini cuman buat ngecheck, digunakan untuk menghitung apakah ada lebih
+        bayar atau kurang bayar
+        pass
