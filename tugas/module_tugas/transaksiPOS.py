@@ -36,6 +36,5 @@ class transaksi_pos(pajak_ppn):
         print("=" * 40)
 
     def proses_pembayaran(self):
-        #Bagian kina disini, method ini cuman buat ngecheck, digunakan untuk menghitung apakah ada lebih
-        bayar atau kurang bayar
+        # Bagian kina disini, method ini cuman buat ngecheck, digunakan untuk menghitung apakah ada lebih bayar atau kurang bayar
         pass
