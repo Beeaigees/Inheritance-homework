@@ -22,4 +22,3 @@ while True:
     transaksi.tambah_item(nama_menu, harga, jumlah)
 
 transaksi.proses_pembayaran()
-transaksi.cetak_struk()

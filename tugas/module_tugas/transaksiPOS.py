@@ -35,6 +35,27 @@ class transaksi_pos(pajak_ppn):
         print(f"{'Total Akhir':<25} : Rp {self.total_akhir:>8,.0f}")
         print("=" * 40)
 
-    def proses_pembayaran(self):
-        # Bagian kina disini, method ini cuman buat ngecheck, digunakan untuk menghitung apakah ada lebih bayar atau kurang bayar
-        pass
+    def proses_pembayaran(self): # done ya bagian kinakinakina
+        self.cetak_struk()
+            
+        while True:
+            print("\nMasukkan jumlah pembayaran:")
+            bayar = float(input("Rp "))
+
+            selisih = bayar - self.total_akhir
+
+            print("-" * 40)
+            if selisih > 0:
+                print(f"{'Pembayaran':<25} : Rp {bayar:>8,.0f}")
+                print(f"{'Kembalian':<25} : Rp {selisih:>8,.0f}")
+                print("=" * 40)
+                break
+            elif selisih == 0:
+                print("Pembayaran pas. Terima kasih!")
+                print("=" * 40)
+                break
+            else:
+                print(f"{'Pembayaran':<25} : Rp {bayar:>8,.0f}")
+                print(f"{'Kurang Bayar':<25} : Rp {abs(selisih):>8,.0f}")
+                print("=" * 40)
+                print("Pembayaran kurang, silakan masukkan ulang.")
